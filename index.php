@@ -1,11 +1,27 @@
 <?php
 
-require_once __DIR__ . "/models/movie.php";
+include 'server.php';
 
-$new_film = new movie (
-  'spider man',
-  'Tobey Maguire',
-  'Sam Raimi'
-);
 
-var_dump($new_film->getFullInfo());
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film php</title>
+</head>
+<body>
+  <h1>Film</h1>
+  <div>
+    <ul>
+      <?php foreach($film as $films): ?>
+      <li>
+        <? echo $films->getFullInfo() ?> - <? echo $films->getFullGenre() ?> 
+      </li>
+      <?php endforeach; ?>
+    </ul>
+  </div>
+</body>
+</html>
