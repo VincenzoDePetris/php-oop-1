@@ -15,4 +15,12 @@ class movie
     $this->main_character = $main_character;
     $this->director = $director;
   }
+
+  public function getFullInfo(){
+    return "titolo : $this->title , attore protagonista : $this->main_character , regista: $this->director ";
+  }
+
+
 }
+
+?>

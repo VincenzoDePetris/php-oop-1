@@ -1,11 +1,11 @@
-<?php 
+<?php
 
-require_once __DIR__ . '/models/movie.php';
+require_once __DIR__ . "/models/movie.php";
 
-$new_film = new film(
-  'Spiderman',
+$new_film = new movie (
+  'spider man',
   'Tobey Maguire',
-  'Sam Raimi',
+  'Sam Raimi'
 );
 
-var_dump($new_film);
+var_dump($new_film->getFullInfo());
