@@ -23,6 +23,8 @@ class movie
     return "titolo: $this->title" . ", attore protagonista: $this->main_character" . ", regista: $this->director";
   }
 
+ 
+
 
 }
 
