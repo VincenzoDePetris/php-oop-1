@@ -16,9 +16,9 @@ include 'server.php';
   <h1>Film</h1>
   <div>
     <ul>
-      <?php foreach($movies as $movie): ?>
+      <?php foreach($productions as $production): ?>
       <li>
-        <?= $movie->getFullInfo() ?> - <?= $movie->genre ->getFullGenre() ?> 
+        <?= $production->getFullInfo() ?> - <?= $production->genre ->getFullGenre() ?> 
       </li>
       <?php endforeach; ?>
     </ul>

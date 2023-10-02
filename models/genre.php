@@ -13,6 +13,8 @@ class genre{
   }
 
   public function getFullGenre(){
-    return "Genere: $this->genre , sottogenere: $this->subgenre";
+    return 
+    "Genere: $this->genre , <br> 
+    sottogenere: $this->subgenre";
   }
 };
