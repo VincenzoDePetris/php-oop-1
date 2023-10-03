@@ -1,11 +1,19 @@
 <?php
 
+trait cost {
+  public $production_cost;
+  public function getProductionCost() {
+    return "I costi di produzione ammontano a $production_cost";
+    }
+}
+
 class production
 {
   public $title;
   public $main_character;
   public $director;
   public $genre;
+  use cost;
 
   public function __construct(
     string $title,
