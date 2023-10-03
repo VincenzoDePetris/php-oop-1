@@ -22,6 +22,13 @@ class TV_serie extends production{
   }
 
   public function getFullInfo(){
-    return "titolo: $this->title" . ", attore protagonista: $this->main_character" . ", regista: $this->director" . ",  anno di messa in onda del primo episodio: $this->aired_from_year" . ", anno di messa in onda dell'ultimo episodio: $this->aired_to_year" . ", numero di episodi: $this->number_of_episodes" . ",  numero di stagioni: $this->number_of_seasons";
+    return 
+    "titolo: $this->title  <br>" . 
+    ", attore protagonista: $this->main_character <br>" .
+    ", regista: $this->director <br>" .
+    ",  anno di messa in onda del primo episodio: $this->aired_from_year <br>" .
+    ", anno di messa in onda dell'ultimo episodio: $this->aired_to_year <br>" .
+    ", numero di episodi: $this->number_of_episodea <br>" .
+    ",  numero di stagioni: $this->number_of_seasons <br>";
   }
 }
